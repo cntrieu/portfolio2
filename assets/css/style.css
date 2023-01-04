@@ -1,6 +1,13 @@
 body {
     background-color: #C4DACF;
+    margin: 0;
+    padding: 0;
 }
+
+main {
+    max-width: 90%;
+}
+
 
 /* HEADER */
 
@@ -9,6 +16,7 @@ header {
       "Lucida Sans", Arial, sans-serif;
     background-color: #C4E7D4;
     color: #998DA0;
+
   }
   
 header h1 {
@@ -52,3 +60,120 @@ header nav ul li {
 }
 
 /* CONTENT */
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.content h2 {
+    font-size: 4em;
+    border-right: 0.1em solid green;
+    padding: 0.5em;
+    text-align: right;
+    margin-right: 1em;
+}
+
+/* CONTENT - ABOUT */
+
+.about p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+/* CONTENT - WORK */
+
+.content, .projects, .contact-container {
+    padding: 3em;
+}
+
+/* .work {
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+
+.work-container {
+    display: flex;
+    margin: 0 2em 2em 2em;
+     flex: auto;
+     flex-wrap: wrap;
+     gap: 20px;
+     justify-content: space-between;
+}
+
+/* .first-container {
+    display: flex;
+   
+ 
+} */
+
+
+
+
+.projects {
+    border: 4px solid green;
+    display: flex;
+    align-items: flex-end;
+    
+} 
+
+
+
+/* .projects:first-child {
+    min-height: 10em;
+    flex: 0 0 100%;
+   
+} */
+
+/* .projects: */
+
+.column {
+    border: 5px solid black;
+    background-color: red;
+    width: 10em;
+    
+}
+
+
+
+
+/* WORK IMAGES */
+
+.surf {
+    background-image: url("../images/surf.jpg");
+    background-size: calc(100%);
+    width: 100%;
+    height: 50vh;
+  
+}
+
+.LED {
+    background-image: url("../images/LED-Wall.png");
+}
+
+.calculator {
+    background-image: url("../images/calculator.jpg");
+    
+}
+
+.pastel {
+    background-image: url("../images/pastel.jpg");
+    background-size: contain;
+}
+
+.run {
+    background-image: url("../images/running.jpg");
+    background-size: cover;
+}
+
+.LED, .calculator, .pastel, .run {
+    width: 40%;
+    height: 20vh;
+}
+
+/* CONTENT - CONTACT */
+
+
