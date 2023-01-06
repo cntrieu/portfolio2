@@ -298,7 +298,6 @@ a {
 /* FOR SMALLER SCREENS  */
 
 @media only screen and (max-width: 768px) {
-
     header nav ul li {
         margin: 0 0.2em 0 0.2em;
     }
@@ -311,8 +310,15 @@ a {
         margin: 0.5em;
     }
 
+    /* Adjusting portrait size according to breakpoints */
     #portrait { 
         width: 125px;
+        height: auto;
+    }
+
+    /* Letting the other projects fill into one single column when the screen becomes too small */
+    .LED, .calculator, .pastel, .run {
+        width: 100%;
         height: auto;
     }
 }
