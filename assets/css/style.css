@@ -3,7 +3,7 @@
 
 * {
     box-sizing: border-box;
-  }
+}
 
 :root {
     --primary: #eaf4f4;
@@ -11,6 +11,7 @@
     --borders: #a4c3b2;
     --tertiary: #b5179e;
     --body: #2d6a4f;
+    --links: #e2a7ff;
 }
 
 body {
@@ -53,7 +54,7 @@ header nav ul li {
   } 
 
 header nav ul li a:hover {
-    color: #e2a7ff; 
+    color: var(--links); 
 }
 
 /* BANNER */
@@ -149,7 +150,6 @@ section h2 {
 
 /* TEXT LAYING ON TOP OF PROJECTS */
 .column {
-  
     border: 5px solid var(--borders);
     background-color: var(--borders);
     color: var(--tertiary);
@@ -169,8 +169,11 @@ section h2 {
     
 }
 
-a:link {
+a {
     text-decoration: none;
+    color: var(--text);
+    border-bottom: 2px solid var(--tertiary);
+    padding: 0 0 0.1em 0;
 }
 
 /* WORK IMAGES */
@@ -180,7 +183,6 @@ a:link {
     background-size: cover;
     width: 100%;
     height: 40vh;
-  
 }
 
 .LED {
@@ -223,7 +225,7 @@ a:link {
 }
 
 .contact address a:hover {
-    color: #e2a7ff; 
+    color: var(--links); 
 }
 
 /* MEDIA QUERIES USING SEVERAL BREAKPOINTS */
@@ -239,6 +241,7 @@ a:link {
 @media screen and (max-width: 992px) {
     main {
         margin: 0 auto 0 auto;
+        padding: 0;
     }
 
     #portrait { 
@@ -264,11 +267,7 @@ a:link {
         flex-grow: 1;
     }
 
-    header h1 {
-        margin: 1em;
-    }
-
-    section h2 {
+    header h1, section h2 {
         margin: 1em;
     }
 
@@ -281,7 +280,6 @@ a:link {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin-left: 3em;
     }
 
     .work-container {
