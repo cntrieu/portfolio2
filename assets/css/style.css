@@ -3,7 +3,7 @@
 
 * {
     box-sizing: border-box;
-  }
+}
 
 :root {
     --primary: #eaf4f4;
@@ -11,6 +11,7 @@
     --borders: #a4c3b2;
     --tertiary: #b5179e;
     --body: #2d6a4f;
+    --links: #e2a7ff;
 }
 
 body {
@@ -53,7 +54,7 @@ header nav ul li {
   } 
 
 header nav ul li a:hover {
-    color: #e2a7ff; 
+    color: var(--links); 
 }
 
 /* BANNER */
@@ -224,7 +225,7 @@ a {
 }
 
 .contact address a:hover {
-    color: #e2a7ff; 
+    color: var(--links); 
 }
 
 /* MEDIA QUERIES USING SEVERAL BREAKPOINTS */
