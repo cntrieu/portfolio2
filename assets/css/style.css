@@ -178,15 +178,17 @@ a {
 
 /* WORK IMAGES */
 
-.melody-match {
-    background-image: url("../images/team-2-project.github.io_Melody-Match_full.png");
-    background-size: cover;
+.nomad-nebula {
+    background-image: url("../images/the-nomad-nebula.herokuapp.com_.png");
+    background-size: contain;
     width: 100%;
     height: 70vh;
 }
 
-.LED {
-    background-image: url("../images/LED-Wall.png");
+.melody-match {
+    background-image: url("../images/team-2-project.github.io_Melody-Match_full11.png");
+    width: 50%;
+    background-size: cover;
 }
 
 .calculator {
